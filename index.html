@@ -45,7 +45,7 @@
         <section class="claim-section-head section">
             <div class="claim-items container">
                 <h1 class="claim-section-title-text">эффективные решения для вашего бизнеса</h1>
-                <button class="claim-button" type="button" autofocus>Заказать услугу</button>
+                <button class="claim-button data-modal" type="button" autofocus data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="section">
@@ -87,9 +87,24 @@
             <div class="container">
                 <h2 class="tasks">Чем мы занимаемся</h2>
                 <ul class="tasks-set">
-                    <li class="item"><img src="./images/image.jpg" alt="codding on iPad" width="370"/></li>
-                    <li class="item"><img src="./images/image-2.jpg" alt="app design" width="370"/></li>
-                    <li class="item"><img src="./images/image-3.jpg" alt="color palette on iPad" width="370"/></li>
+                    <li class="item">
+                        <div class="tasks-thumb">
+                            <img src="./images/image.jpg" alt="codding on iPad" width="370"/>
+                            <p class="task-name">Десктопные приложения</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="tasks-thumb">
+                            <img src="./images/image-2.jpg" alt="app design" width="370"/>
+                            <p class="field task-name">Мобильные приложения</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="tasks-thumb">
+                            <img src="./images/image-3.jpg" alt="color palette on iPad" width="370"/>
+                            <p class="task-name">Дизайнерские решения</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -292,7 +307,6 @@
                         <a href=""></a>
                     </li>
                 </ul>
-
             </div>
         </section>
     </main>
@@ -339,5 +353,15 @@
             </di>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-button" data-modal-close>
+                <svg class="close-icon" width="11px" height="11px">
+                    <use href="./images/close.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
